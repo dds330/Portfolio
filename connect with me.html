@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head meta charset = "UTF-8">
+        <title>Connect with me</title>
+        <link rel = "icon" href = "images/favicon.png">
+        <link href = "styles.css" rel = "stylesheet">
+    </head>
+    
+    <body class = "connectWithMe">
+        <div id = "pageContainer">
+            <div id = "wrap">
+            <header>
+            <table class = "navigationOTHER" width = "100%" cellspacing = "20" cellpadding = "10">
+                <nav>
+                    <tr>
+                        <td width = "20%"><a href = "resume.html"><b>RESUME</b></a></td>
+                        <td width = "22%" ><a href = "about.html"><b>ABOUT</b></a></td>
+                        <td width = "22%" ><a href = "index.html"><b>HOME</b></a></td>
+                        <td width = "20%" ><a href = "courses.html"><b>COURSES</b></a></td>
+                        <td><a href = "connect with me.html"><b>CONNECT WITH ME</b></a></td>   
+                    </tr>
+                </nav>      
+            </table>
+            <nav class = "hamburgerMenu"> 
+                <ul class = "navHam-menu">
+                    <li class = "hamItem"><a href = "index.html" class = "hamLink"><b>HOME</b></a></li>
+                    <li class = "hamItem"><a href = "about.html" class = "hamLink"><b>ABOUT</b></a></li>
+                    <li class = "hamItem"><a href = "resume.html" class = "hamLink"><b>RESUME</b></a></li>
+                    <li class = "hamItem"><a href = "courses.html" class = "hamLink"><b>COURSES</b></a></li>
+                    <li class = "hamItem"><a href = "connect with me.html" class = "hamLink"><b>CONNECT WITH ME</b></a></li>
+                </ul>
+                <div class = "hamburger">
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                </div>
+            </nav>                      
+            </header>
+        
+            <main>
+                <div class = "themeChanger">
+                    <button id="colorBtn1">Theme - Pastel Rainbow</button>
+                    <button id="colorBtn2">Theme - Berry Bliss</button>
+                    <button id="colorBtn3">Theme - Olive Branch</button>
+                </div>
+
+            <h1 id = "connectH1">I WOULD LOVE TO CONNECT WITH YOU!</h1>
+
+            <div class = "connect_parent">
+            <img src = "images/me.jpg" alt = "a picture of me" width = "300" height = "500">
+
+            <div class = "parent2">
+            <h2 class = "connect_child2">Fill out this form to connect with me:</h2>
+
+            <section class = "formC">
+                <form  method = "POST" id = "form">
+                    
+                    <p>
+                        <label for = "name" >Name:</label>
+                        <input type = "text" name = "name" id = "name">
+                    </p>
+                    <p>
+                        <label for = "email">Email: </label>
+                        <input type = "text" name = "email" id = "email">
+                    </p>
+
+                    <p>Connect with me on:</p>
+                    <div>
+                        <input type = "radio" name = "social_media" value = "https://www.linkedin.com/in/dhruvi-shah-65baa7247/" id = "LinkedIn">
+                        <label for = "LinkedIn">LinkedIn</label>
+                    </div>
+                    <div>
+                        <input type = "radio" name = "social_media" value = "Email" id = "el">
+                        <label for = "email">Email</label>
+                    </div>
+                    <div>
+                        <input type = "radio" name = "social_media" value = "Instagram" id = "insta">
+                        <label for = "insta">Instagram</label>
+                    </div>
+                    <div class = "message">
+                        <textarea name = "message" rows = "4" cols = "50" placeholder = "Leave me a message!"></textarea>
+                        <p>
+                            <input type = "checkbox" id = "check">
+                            <label for = "checked" style = "color: white">I consent to receving communication from Dhruvi.</label>
+                            <input type = "submit" value = "Submit" id = "submit" disabled>
+                        </p>
+                    </div>
+
+                </form>
+            </section>
+
+            </div>
+            </div>
+
+            </main>
+            </div>
+        </div>
+ 
+        <script src = "javaS.js"></script>
+    </body>
+ 
+
+</html>

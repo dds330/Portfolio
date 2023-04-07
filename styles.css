@@ -1,0 +1,494 @@
+/*index page background*/
+.index{
+    background-image: url('images/back1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/*navigation bar styling*/
+.navigation{
+    border-bottom: 3px solid black;
+    font-size: 18px;
+}
+
+.index a:link{
+    color: black;
+}
+.index a:visited{
+    color: #38201C;
+}
+.index a:hover{
+    color: whitesmoke;
+}
+a:active{
+    color:midnightblue;
+}
+.navigation{
+    max-height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/*footer styling*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+#pageContainer{
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+}
+#wrap{
+    padding-bottom: 2.5rem;
+}
+#border{
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+#footer{
+    font-size: 18px;
+}
+
+/*index page styling*/
+#indexH1{
+    font-size: 80px;
+    text-align: center;
+}
+.indexPara{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/*image styled with border, padding and margins*/
+.centerImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    border: 0px solid white;
+    box-shadow: 0px 4px 8px;
+}
+
+/*other pages general styling*/
+
+.otherPages{
+   background-color: lightgrey;
+    color: #363738;
+    
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.otherPages p, .otherPages li{
+    font-size: 20px;
+}
+
+p::selection, li::selection{
+    background-color: yellow;
+}
+
+.navigationOTHER{
+    border-bottom: 3px solid black;
+    font-size: 18px;
+    background-color:#363738 ;
+
+}
+.navigationOTHER a:link, .navHam-menu a:link{
+    color:whitesmoke;
+}
+.navigationOTHER a:visited, .navHam-menu a:visited{
+    color: lightpink;
+}
+.navigationOTHER a:hover, .navHam-menu a:hover{
+    color: lightgreen;
+}
+
+/*about page styling*/
+*.aboutH1{
+    font-family:'Lucida Handwriting','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.pandaCell{
+    text-align: right;
+}
+
+#abTAB{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 45%;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*image styled with border,margin and padding*/
+.panda{
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 2px;
+    margin: 1px;
+}
+.about{
+    font-family:'Lucida Handwriting','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.ABflex{
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+
+.ABflex, #intro{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.CP, .know{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ABflex a:hover, #abTAB a:hover{
+    color: teal;
+}
+
+
+  .fictionalWorks{
+    text-align: center;
+    font-family:'Lucida Handwriting','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+  }
+  .imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .quote {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+
+/*courses page styling*/
+.courses{
+    margin-left: 50px;
+    border-left: 5px solid black;
+    font-size: 18px;
+}
+
+.coursesOL{
+   margin-bottom: 2px;
+}
+
+.coursesLI{
+    margin-bottom: 20px;
+}
+
+.pandaFace{
+    border-radius: 50%;
+}
+.course{
+    text-align: center;
+    font-family: 'Lucida Handwriting','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+h1 + table{
+    background-image: url('images/grey.jpg');
+    width : 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Lucida Handwriting','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-size: 23px;
+    text-align: center;
+    border-collapse: collapse;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.listStyle{
+    list-style-type: square;
+}
+
+h3 ~ video{
+    margin-top: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+    text-align: center;
+}
+
+/*resume page styling*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+}
+
+/*connect page styling*/
+
+#connectH1{
+    text-align: center;
+}
+.connect_parent{
+    display: flex;
+    gap: 50px;
+    margin-left: 200px;
+}
+/*image styled with border, margin and padding*/
+img[alt ~= "me"]{
+    border-radius: 100%;
+    border: 0.5px solid black;
+    box-shadow: 6px 2px 3px #ccc;
+    margin: 2px;
+    padding: 1px;
+}
+
+.connectlink{
+    font-size: 25px;
+}
+.mail{
+    font-size: 25px;
+}
+.email{
+    font-size: 25px;
+}
+
+.connectWithMe{
+    color: white;
+    background-image: url('images/grey.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#cadd{
+    color: black;
+}
+
+.connect_child2{
+    font-size: 25px;
+}
+
+.connect_parent a:link{
+    color: white;
+}
+.connect_parent a:visited{
+    color: black;
+}
+.connect_parent a:hover{
+    color:aquamarine;
+}
+
+.formC{
+    color: black;
+    font-size: 20px;
+}
+#name, #email{
+    width: 50%;
+    padding: 7px;
+}
+.message{
+    margin-top: 10px;
+}
+
+
+/*hamburger menu styling*/
+.hamburgerMenu{
+    display: none;
+}
+.bar{
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* CSS rules for mobile devices */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navigationOTHER{
+        display:none;
+    }
+
+    /*about page mobile dev*/
+    #abTAB {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .pandaCell {
+        order: 2;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ABflex {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .ABflex span {
+        margin-bottom: 0;
+    }
+    
+    .ABflex span:last-child {
+        margin-bottom: 0;
+    }
+    iframe {
+        width: 100%;
+        height: 300px; /* Set a smaller height for mobile */
+    }
+    .navigationOTHER tr td:last-child {
+        display: none;
+    }
+
+    /*courses page mobile dev*/
+    video {
+        width: 100%;
+    }
+    #prof {
+        max-width: 85%; 
+        font-size: 0.8em;
+    }
+    .connect_parent {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    img[alt ~= "me"] {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .hamburger{
+        display: block;
+        position: fixed;
+        z-index: 100;
+        top: 10px;
+        left: 10px;
+    }
+    .hamburgerMenu{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navHam-menu{
+        list-style-type: none;
+        visibility: hidden;
+        position: fixed;
+        left: -100%;
+        width: 100vw;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #777777;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .hamItem{
+        margin: 16px 0;
+    }
+    .navHam-menu.active{
+        visibility: visible;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    /*about page mobile dev*/
+    #abTAB {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    
+    .pandaCell {
+        order: 2;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ABflex {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .ABflex span {
+        margin-bottom: 0;
+    }
+    
+    .ABflex span:last-child {
+        margin-bottom: 0;
+    }
+    iframe {
+        width: 100%;
+        height: 300px; /* Set a smaller height for mobile */
+    }
+
+      /*courses page mobile dev*/
+    video {
+        width: 100%;
+    }
+    #prof {
+        max-width: 85%; 
+        font-size: 0.8em;
+    }
+    .connect_parent {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    img[alt ~= "me"] {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+/*adding padding around the buttons used to change the theme*/
+.themeChanger{
+    padding: 10px;
+}
+  
