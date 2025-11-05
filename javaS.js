@@ -9,9 +9,19 @@ if (dotIcon && dotMenu) {
         dotMenu.classList.toggle("active");
     });
 
-    document.querySelectorAll(".dotLink").forEach(n => n.addEventListener("click", ()=>{
+    document.querySelectorAll(".dotLink").forEach(n => n.addEventListener("click", (e)=>{
         dotIcon.classList.remove("active");
         dotMenu.classList.remove("active");
+        
+        // Smooth scroll for anchor links
+        if (n.getAttribute("href") && n.getAttribute("href").startsWith("#")) {
+            e.preventDefault();
+            const targetId = n.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }
     }));
 }
 
