@@ -1276,6 +1276,7 @@ body {
     height: 100vh;
     gap: 0;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     text-align: left;
