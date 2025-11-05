@@ -8,12 +8,29 @@
         <link href = "styles.css" rel = "stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Montserrat:wght@600&family=Sora:wght@800&display=swap" rel="stylesheet">
     </head>
 
     <body class = "index">
         <div id = "pageContainer">
         <div id = "wrap">
+        
+        <!-- Animated Geometric Shapes Background -->
+        <div class="geometricShapes">
+            <div class="shape shape-circle circle1"></div>
+            <div class="shape shape-circle circle2"></div>
+            <div class="shape shape-circle circle3"></div>
+            <div class="shape shape-circle circle4"></div>
+            <div class="shape shape-triangle triangle1"></div>
+            <div class="shape shape-triangle triangle2"></div>
+            <div class="shape shape-hexagon hexagon1"></div>
+            <div class="shape shape-hexagon hexagon2"></div>
+            <div class="shape shape-blob blob1"></div>
+            <div class="shape shape-blob blob2"></div>
+            <div class="shape shape-blob blob3"></div>
+            <div class="shape shape-circle circle5"></div>
+            <div class="shape shape-circle circle6"></div>
+        </div>
         
         <!-- Cute dot menu -->
         <nav class = "dotMenu"> 
@@ -50,7 +67,7 @@
                             <div class="compilingSection">
                                 <div class="verticalLine"></div>
                                 <h2 class="heroTitle">
-                                    Currently compiling: a career built on curiosity, code, and a few too many coffee refills.
+                                    <span class="typing-text">Currently compiling: a career built on curiosity,<br>code, and a few too many coffee refills.</span><span class="typing-cursor">|</span>
                                 </h2>
                             </div>
                             <p class="heroDescription">
@@ -58,9 +75,58 @@
                                 <br><br>
                                 Always chasing the next "aha!" moment.
                                 <br><br>
-                                Glad you found your way here ⚡
+                                Glad you found your way here 💗
                             </p>
                         </div>
+                        
+                        <!-- Animated Code Window on the Right -->
+                        <div class="codeWindow">
+                            <div class="codeHeader">
+                                <div class="codeDots">
+                                    <span class="codeDot red"></span>
+                                    <span class="codeDot yellow"></span>
+                                    <span class="codeDot green"></span>
+                                </div>
+                                <span class="codeTitle">code.js</span>
+                            </div>
+                            <div class="codeContent">
+                                <div class="codeLine">
+                                    <span class="codeKeyword">const</span> 
+                                    <span class="codeVariable">coder</span> 
+                                    <span class="codeOperator">=</span> 
+                                    <span class="codeString">'Dhruvi'</span><span class="codeOperator">;</span>
+                                </div>
+                                <div class="codeLine">
+                                    <span class="codeKeyword">const</span> 
+                                    <span class="codeVariable">style</span> 
+                                    <span class="codeOperator">=</span> 
+                                    <span class="codeString">'pretty'</span><span class="codeOperator">;</span>
+                                </div>
+                                <div class="codeLine">
+                                    <span class="codeKeyword">const</span> 
+                                    <span class="codeVariable">passion</span> 
+                                    <span class="codeOperator">=</span> 
+                                    <span class="codeString">'code + creativity'</span><span class="codeOperator">;</span>
+                                </div>
+                                <div class="codeLine">
+                                    <span class="codeFunction">build</span><span class="codeOperator">(</span>
+                                    <span class="codeVariable">coder</span><span class="codeOperator">,</span> 
+                                    <span class="codeVariable">style</span><span class="codeOperator">,</span> 
+                                    <span class="codeVariable">passion</span><span class="codeOperator">);</span>
+                                </div>
+                                <div class="codeCursor">▊</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Tech Icons -->
+                    <div class="floatingShapes">
+                        <div class="floatingShape shape1">💻</div>
+                        <div class="floatingShape shape2">✨</div>
+                        <div class="floatingShape shape3">🚀</div>
+                        <div class="floatingShape shape4">💜</div>
+                        <div class="floatingShape shape5">⚡</div>
+                        <div class="floatingShape shape6">🎨</div>
                     </div>
                 </div>
             </main>
