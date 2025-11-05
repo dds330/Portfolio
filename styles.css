@@ -1047,7 +1047,7 @@ body {
    SKILLS SECTION
    =================================== */
 .skillsSection {
-    margin-top: 4rem;
+    margin-top:0em;
     padding: 3rem;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 1.5rem;
@@ -1212,6 +1212,9 @@ body {
     top: 2rem;
     right: 2rem;
     z-index: 1000;
+    width: auto;
+    height: auto;
+    display: inline-block;
 }
 
 .dotIcon {
@@ -1234,6 +1237,10 @@ body {
     border-color: rgba(236, 72, 153, 0.7);
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15), 0 0 30px rgba(236, 72, 153, 0.5);
+}
+
+.dotMenu:hover .dotIcon {
+    transform: scale(1.05);
 }
 
 .dotRow {

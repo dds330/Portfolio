@@ -18,7 +18,8 @@
 /* Skills Section on Index Page */
 .skillsSectionIndex {
     min-height: 100vh;
-    padding: 6rem 2rem 4rem;
+    padding: 0 2rem 4rem;
+    padding-top: 2rem;
     background: #f8fafc;
     position: relative;
     z-index: 1;
@@ -33,18 +34,35 @@
     margin-bottom: 5rem;
 }
 
+.skillsSection:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 .skillsSection:last-child {
     margin-bottom: 2rem;
+}
+
+.skillsTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    min-height: 60px;
 }
 
 .skillsTitle {
     font-size: 3.5rem;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 4rem;
+    margin: 0;
+    padding: 0;
     color: #0f172a;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1;
 }
 
 
