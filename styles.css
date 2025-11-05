@@ -1279,18 +1279,18 @@ body {
     visibility: hidden;
     position: fixed;
     right: -100%;
-    top: 0;
+    top: 2rem;
     width: 280px;
-    height: 100vh;
+    height: auto;
     gap: 0;
     flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    padding: 2rem;
+    padding: 1.5rem;
     transition: 0.3s;
     z-index: 999;
     border-left: 2px solid rgba(236, 72, 153, 0.5);
@@ -1302,9 +1302,49 @@ body {
     right: 0;
 }
 
-.dotItem {
-    margin: 1.5rem 0;
+.closeButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+}
+
+.closeButtonContainer .dotLink {
+    flex: 1;
+}
+
+.closeMenuButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1e293b;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    line-height: 1;
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.closeMenuButton:hover {
+    background: rgba(236, 72, 153, 0.15);
+    color: #ec4899;
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.25);
+}
+
+.dotItem {
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.dotItem:first-of-type {
+    margin-top: 0;
 }
 
 .dotLink {

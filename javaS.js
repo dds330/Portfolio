@@ -23,6 +23,15 @@ if (dotIcon && dotMenu) {
             }
         }
     }));
+
+    // Close button functionality
+    const closeButton = document.querySelector(".closeMenuButton");
+    if (closeButton) {
+        closeButton.addEventListener("click", () => {
+            dotIcon.classList.remove("active");
+            dotMenu.classList.remove("active");
+        });
+    }
 }
 
 /*code for displaying hamburger menu on mobile versions*/

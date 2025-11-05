@@ -515,3 +515,278 @@
     }
 }
 
+/* ===================================
+   EXPERIENCE SECTION
+   =================================== */
+.experienceSectionIndex {
+    min-height: 100vh;
+    padding: 0 2rem 4rem;
+    padding-top: 2rem;
+    background: #f8fafc;
+    position: relative;
+    z-index: 1;
+}
+
+.experienceContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experienceTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    min-height: 60px;
+}
+
+.experienceTitle {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #0f172a;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+
+.experienceCard {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ec4899;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experienceCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #ec4899, #a855f7, #6366f1);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+}
+
+.experienceCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(236, 72, 153, 0.3);
+}
+
+.experienceHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(236, 72, 153, 0.2);
+}
+
+.experienceIconContainer {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.experienceIcon {
+    font-size: 4rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ec4899, #a855f7);
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(236, 72, 153, 0.3);
+    animation: float 3s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+}
+
+.companyIcon {
+    font-size: 2rem;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    border: 2px solid white;
+    z-index: 3;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.experienceInfo {
+    flex: 1;
+}
+
+.experienceRole {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 0.25rem 0;
+    font-family: 'Space Grotesk', 'Outfit', sans-serif;
+}
+
+.experienceSubtitle {
+    font-size: 1rem;
+    color: #64748b;
+    margin: 0 0 0.75rem 0;
+    font-style: italic;
+}
+
+.experienceCompany {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ec4899;
+    margin: 0 0 0.5rem 0;
+    font-family: 'Space Grotesk', 'Outfit', sans-serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.experienceLocationDate {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.experienceLocation {
+    color: #64748b;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.experienceDate {
+    display: inline-block;
+    background: linear-gradient(135deg, #ec4899, #a855f7);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+    letter-spacing: 0.05em;
+}
+
+.experienceDescription {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.05), rgba(168, 85, 247, 0.05));
+    border-left: 4px solid #ec4899;
+    border-radius: 0.75rem;
+}
+
+.experienceDescription p {
+    color: #1e293b;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
+    font-weight: 500;
+}
+
+.experienceHighlights {
+    margin-top: 2rem;
+}
+
+.highlightsTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 1.5rem 0;
+    font-family: 'Space Grotesk', 'Outfit', sans-serif;
+}
+
+.highlightsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+}
+
+.highlightItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.08), rgba(236, 72, 153, 0.03));
+    border-left: 4px solid #ec4899;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.highlightItem:hover {
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(236, 72, 153, 0.06));
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
+}
+
+.highlightIcon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.highlightText {
+    color: #1e293b;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* Responsive Design for Experience */
+@media (max-width: 768px) {
+    .experienceTitle {
+        font-size: 2.5rem;
+    }
+    
+    .experienceCard {
+        padding: 2rem;
+    }
+    
+    .experienceHeader {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .experienceIconContainer {
+        margin: 0 auto;
+    }
+    
+    .experienceRole {
+        font-size: 1.75rem;
+    }
+    
+    .experienceCompany {
+        font-size: 1.25rem;
+    }
+    
+    .highlightsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
