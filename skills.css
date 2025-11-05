@@ -282,3 +282,236 @@
     }
 }
 
+/* ===================================
+   EDUCATION SECTION
+   =================================== */
+.educationSectionIndex {
+    min-height: 100vh;
+    padding: 0 2rem 4rem;
+    padding-top: 2rem;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.educationContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.educationTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    min-height: 60px;
+}
+
+.educationTitle {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #0f172a;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+
+.educationCard {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fbbf24;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educationCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #000000, #fbbf24, #000000);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+}
+
+.educationCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(251, 191, 36, 0.3);
+}
+
+.educationHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(251, 191, 36, 0.2);
+}
+
+.educationIcon {
+    font-size: 4rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.educationInfo {
+    flex: 1;
+}
+
+.educationDegree {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 0.5rem 0;
+    font-family: 'Space Grotesk', 'Outfit', sans-serif;
+}
+
+.educationUniversity {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fbbf24;
+    margin: 0 0 0.5rem 0;
+    font-family: 'Space Grotesk', 'Outfit', sans-serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.educationYears {
+    display: inline-block;
+    background: linear-gradient(135deg, #000000, #1f2937);
+    color: #fbbf24;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.05em;
+}
+
+.educationDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.educationDetailItem {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.05), rgba(251, 191, 36, 0.02));
+    border-left: 4px solid #fbbf24;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.educationDetailItem:hover {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(251, 191, 36, 0.05));
+    transform: translateX(5px);
+}
+
+.detailLabel {
+    font-weight: 700;
+    color: #000000;
+    min-width: 100px;
+    font-size: 1rem;
+}
+
+.detailValue {
+    color: #1f2937;
+    font-weight: 500;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.educationAwards {
+    margin-top: 2rem;
+}
+
+.awardBadge {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(251, 191, 36, 0.08));
+    border: 2px solid #fbbf24;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.2);
+    transition: all 0.3s ease;
+}
+
+.awardBadge:hover {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(251, 191, 36, 0.12));
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(251, 191, 36, 0.3);
+}
+
+.awardIcon {
+    font-size: 2rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.awardText {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.1rem;
+    flex: 1;
+}
+
+/* Responsive Design for Education */
+@media (max-width: 768px) {
+    .educationTitle {
+        font-size: 2.5rem;
+    }
+    
+    .educationCard {
+        padding: 2rem;
+    }
+    
+    .educationHeader {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .educationIcon {
+        width: 60px;
+        height: 60px;
+        font-size: 3rem;
+    }
+    
+    .educationDegree {
+        font-size: 1.75rem;
+    }
+    
+    .educationUniversity {
+        font-size: 1.25rem;
+    }
+}
+
