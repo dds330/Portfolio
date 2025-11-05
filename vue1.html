@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>DS App</title>
+    <script src = "C:\Users\dds30\Downloads\vue.js"></script>
+</head>
+<body>
+    <div id = "app">
+        <p>Please input First and Last Name</p>
+        <input type = "text" v-model = "firstName" placeholder="First Name">
+        <input type = "text" v-model = "lastName" placeholder="Last Name">
+        <p>{{fullName}}</p>
+        {{ message }}
+        <ul>
+            <todo-task v-for = "task in toDoList" v-bind:todo = "task" v-bind:style = "styleSheet"></todo-task>
+        </ul>
+        <p v-if = "todoList.length > 3">You still have a lot left to do.</p>
+        <p v-else>Only a few more things left! Great job.</p>
+    </div>
+
+    <script>
+        Vue.component('todo-task', {
+            props: ['todo'],
+            template: '<li>{{todo.text}}</li>'
+        });
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                firstName: ' ',
+                lastName: ' ',
+                message: 'May 6 - Monday To-do list',
+                toDoList: [
+                    {text: 'Download Vue.JS'},
+                    {text: 'Meeting at 2'},
+                    {text: 'week 3 of course'}
+                ],
+
+                styleSheet: {
+                    color : 'red',
+                    fontSize : '17px'
+                }
+            },
+        
+            computed: {
+                fullName: function(){
+                    return this.firstName + ' ' + this.lastName;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

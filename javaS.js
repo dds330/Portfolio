@@ -1,22 +1,40 @@
 
+/*code for displaying dot menu on index page*/
+const dotIcon = document.querySelector(".dotIcon");
+const dotMenu = document.querySelector(".navDot-menu");
+
+if (dotIcon && dotMenu) {
+    dotIcon.addEventListener("click", () => {
+        dotIcon.classList.toggle("active");
+        dotMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".dotLink").forEach(n => n.addEventListener("click", ()=>{
+        dotIcon.classList.remove("active");
+        dotMenu.classList.remove("active");
+    }));
+}
+
 /*code for displaying hamburger menu on mobile versions*/
 const Hamburger  = document.querySelector(".hamburger");
 const hamMenu = document.querySelector(".navHam-menu");
 
-Hamburger.addEventListener("click", () => {
-    Hamburger.classList.toggle("active");
-    hamMenu.classList.toggle("active");
-})
+if (Hamburger && hamMenu) {
+    Hamburger.addEventListener("click", () => {
+        Hamburger.classList.toggle("active");
+        hamMenu.classList.toggle("active");
+    });
 
-document.querySelectorAll(".hamLink").forEach(n => n.addEventListener("click", ()=>{
-    Hamburger.classList.remove("active");
-    hamMenu.classList.remove("active");
-}))
+    document.querySelectorAll(".hamLink").forEach(n => n.addEventListener("click", ()=>{
+        Hamburger.classList.remove("active");
+        hamMenu.classList.remove("active");
+    }));
+}
 
 /*feature 1 - notification*/
 window.onload = function() {
-    if(document.title == "Index"){
-        alert("Hello! Welcome to my website.");
+    if(document.title == "Dhruvi Shah - Software Developer" || document.title == "Index"){
+        // Removed alert for cleaner experience
     }
  }
 

@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang = "en">
-    <head meta charset = "UTF-8">
-        <title>about</title>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - Dhruvi Shah</title>
         <link rel = "icon" href = "images/favicon.png">
         <link href = "styles.css" rel = "stylesheet">
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     </head>
 
-    <body class = "otherPages">
+    <body class = "otherPages aboutPage">
         <div id = "pageContainer">
             <div id = "wrap">
             <header>
-            <table class = "navigationOTHER" width = "100%" cellspacing = "20" cellpadding = "10">
-                <nav>
-                    <tr>
-                        <td width = "20%"><a href = "resume.html"><b>RESUME</b></a></td>
-                        <td width = 22% ><a href = "about.html"><b>ABOUT</b></a></td>
-                        <td width = 22% ><a href = "index.html"><b>HOME</b></a></td>
-                        <td width = 20% ><a href = "courses.html"><b>COURSES</b></a></td>
-                        <td><a href = "connect with me.html"><b>CONNECT WITH ME</b></a></td>
-                    </tr>
-                </nav>      
-            </table>  
+            <nav class = "modernNav">
+                <div class="navContainer">
+                    <a href = "index.html" class="navLogo">DS</a>
+                    <ul class="navLinks">
+                        <li><a href = "resume.html">RESUME</a></li>
+                        <li><a href = "about.html" class="active">ABOUT</a></li>
+                        <li><a href = "index.html">HOME</a></li>
+                        <li><a href = "projects.html">PROJECTS</a></li>
+                        <li><a href = "connect with me.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>  
             <nav class = "hamburgerMenu"> 
                 <ul class = "navHam-menu">
                     <li class = "hamItem"><a href = "index.html" class = "hamLink"><b>HOME</b></a></li>
                     <li class = "hamItem"><a href = "about.html" class = "hamLink"><b>ABOUT</b></a></li>
                     <li class = "hamItem"><a href = "resume.html" class = "hamLink"><b>RESUME</b></a></li>
-                    <li class = "hamItem"><a href = "courses.html" class = "hamLink"><b>COURSES</b></a></li>
+                    <li class = "hamItem"><a href = "projects.html" class = "hamLink"><b>PROJECTS</b></a></li>
                     <li class = "hamItem"><a href = "connect with me.html" class = "hamLink"><b>CONNECT WITH ME</b></a></li>
                 </ul>
                 <div class = "hamburger">
@@ -46,10 +51,10 @@
                     <button id="colorBtn3">Theme - Olive Branch</button>
                     </div>
                     
-            <h1 class = "aboutH1">About :</h1>
+            <h1 class = "aboutH1"><span class="gradientText">About Me</span></h1>
             <div id = "abTAB">
                 <div class = "pandaCell"><img src = "images/panda.jpg" alt = "panda!" width = "300" height = "250" class = "panda"></div>
-                <div><p id = "intro"><strong>Here's a little bit 'bout myself.</strong><br><br>I am currently pursuing my bachelor's degree in <em>Computer Science</em> at <a href="https://www.dal.ca/" >Dalhousie University</a>.<br>I'm originally from India. I love exploring new places and cultures.<br>I love reading! But I tend to dislike non-fiction because for me reading is like an escape from real world but non-fiction doesn't stimulate my neurons that way. :( <br> <br></p></div>
+                <div><p id = "intro"><strong>Here's a little bit about myself.</strong><br><br>I am currently pursuing my bachelor's degree in <em>Computer Science</em> at <a href="https://www.dal.ca/" style="color: var(--primary-color);">Dalhousie University</a>.<br>I'm originally from India. I love exploring new places and cultures.<br>Passionate about software development, I enjoy building innovative solutions and creating beautiful user experiences. When I'm not coding, I love reading fiction as an escape from the real world! <br> <br></p></div>
             </div>
             
             <!--image gallery-->
@@ -83,19 +88,20 @@
             </div>
 
             <div>
-            <h2 class = "about">My skills :</h2>
+            <h2 class = "about">My Skills :</h2>
                 <ol type = "1">
-                    <li>I am proficient in using MS Office.</li>
-                    <li>I'm a great multitasker</li>
-                    <li>I am a proud multilingual with proficieny in more than 3 languages</li>
-                    <li>I am a quick and ardent learner</li>
+                    <li>Full-stack web development with modern frameworks</li>
+                    <li>Problem-solving and algorithmic thinking</li>
+                    <li>Collaborative software development using Git</li>
+                    <li>Multilingual communication (proficient in 3+ languages)</li>
+                    <li>Quick learner with a passion for new technologies</li>
                </ol>
             </div>
             </div>
 
             <section class = "CP">
-                <h2 class = "about">My career aspirations :</h2>
-                <p>It has been my lifelong dream to be a cybersecurity professional like my dad and I plan on pursuing it as my career path. Although, I am also developing interest in design and animation in computer science.<br>As an artsy and creative person, I would like to further my creativity into something more too! <br>I have also been contemplating a minor in bioinformatics given my interest in the field. <br>Like they say - 'There's no limit to what you can be' I plan on exploring new fields throughout my bachelor's before choosing my area of specialization.</p>
+                <h2 class = "about">My Career Aspirations :</h2>
+                <p>It has been my lifelong dream to be a cybersecurity professional, and I plan on pursuing it as my career path. I'm also developing a strong interest in full-stack development and UI/UX design.<br>As a creative person, I enjoy combining technical skills with artistic vision to build beautiful and functional applications.<br>I'm exploring various fields including web development, mobile app development, and cybersecurity to find my perfect niche. <br>As they say - 'There's no limit to what you can be!' I plan on exploring new technologies throughout my bachelor's before choosing my area of specialization.</p>
             </section>
 
             <section class = "know">
@@ -105,17 +111,25 @@
             </iframe>
             </section>
             
-            <footer>
-                <table id = "footer" width = "100%" height = "70" cellspacing = "20" cellpadding = "20">
-                    <tr>
-                        <td id = "border" colspan = "3"><a href = "connect with me.html"><strong>CONNECT WITH ME</strong></a></td>
-                    </tr>
-                    <tr>
-                        <td width = "43%"><a href = "https://www.linkedin.com/in/dhruvi-shah-65baa7247/"> <img src = "images/linkedin.png" width = "50" height = "50"></a></td>
-                        <td class = "address" width = "50%">Mailing Address: <br> 4 Privet Drive, Little Whinging, Surrey</td>
-                        <td><a href = "mailto:"> <img src = "images/email2.png" width = "50" height = "50"></a></td>
-                    </tr>
-                </table>
+            <footer class="modernFooter">
+                <div class="footerContent">
+                    <div class="footerSection">
+                        <h3>Connect With Me</h3>
+                        <div class="socialLinks">
+                            <a href = "https://www.linkedin.com/in/dhruvi-shah-65baa7247/" class="socialLink">
+                                <img src = "images/linkedin.png" width = "30" height = "30" alt="LinkedIn">
+                            </a>
+                            <a href = "mailto:" class="socialLink">
+                                <img src = "images/email2.png" width = "30" height = "30" alt="Email">
+                            </a>
+                            <a href = "connect with me.html" class="socialLink">Contact Form</a>
+                        </div>
+                    </div>
+                    <div class="footerSection">
+                        <p>&copy; 2024 Dhruvi Shah. All rights reserved.</p>
+                        <p>Built with passion and dedication</p>
+                    </div>
+                </div>
             </footer>
             </main>
             

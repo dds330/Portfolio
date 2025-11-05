@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang = "en">
-    <head meta charset = "UTF-8">
-        <title>Connect with me</title>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Dhruvi Shah</title>
         <link rel = "icon" href = "images/favicon.png">
         <link href = "styles.css" rel = "stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     </head>
     
     <body class = "connectWithMe">
         <div id = "pageContainer">
             <div id = "wrap">
             <header>
-            <table class = "navigationOTHER" width = "100%" cellspacing = "20" cellpadding = "10">
-                <nav>
-                    <tr>
-                        <td width = "20%"><a href = "resume.html"><b>RESUME</b></a></td>
-                        <td width = "22%" ><a href = "about.html"><b>ABOUT</b></a></td>
-                        <td width = "22%" ><a href = "index.html"><b>HOME</b></a></td>
-                        <td width = "20%" ><a href = "courses.html"><b>COURSES</b></a></td>
-                        <td><a href = "connect with me.html"><b>CONNECT WITH ME</b></a></td>   
-                    </tr>
-                </nav>      
-            </table>
+            <nav class = "modernNav">
+                <div class="navContainer">
+                    <a href = "index.html" class="navLogo">DS</a>
+                    <ul class="navLinks">
+                        <li><a href = "resume.html">RESUME</a></li>
+                        <li><a href = "about.html">ABOUT</a></li>
+                        <li><a href = "index.html">HOME</a></li>
+                        <li><a href = "projects.html">PROJECTS</a></li>
+                        <li><a href = "connect with me.html" class="active">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
             <nav class = "hamburgerMenu"> 
                 <ul class = "navHam-menu">
                     <li class = "hamItem"><a href = "index.html" class = "hamLink"><b>HOME</b></a></li>
                     <li class = "hamItem"><a href = "about.html" class = "hamLink"><b>ABOUT</b></a></li>
                     <li class = "hamItem"><a href = "resume.html" class = "hamLink"><b>RESUME</b></a></li>
-                    <li class = "hamItem"><a href = "courses.html" class = "hamLink"><b>COURSES</b></a></li>
+                    <li class = "hamItem"><a href = "projects.html" class = "hamLink"><b>PROJECTS</b></a></li>
                     <li class = "hamItem"><a href = "connect with me.html" class = "hamLink"><b>CONNECT WITH ME</b></a></li>
                 </ul>
                 <div class = "hamburger">
@@ -38,12 +44,6 @@
             </header>
         
             <main>
-                <div class = "themeChanger">
-                    <button id="colorBtn1">Theme - Pastel Rainbow</button>
-                    <button id="colorBtn2">Theme - Berry Bliss</button>
-                    <button id="colorBtn3">Theme - Olive Branch</button>
-                </div>
-
             <h1 id = "connectH1">I WOULD LOVE TO CONNECT WITH YOU!</h1>
 
             <div class = "connect_parent">
@@ -93,11 +93,30 @@
             </div>
 
             </main>
+            
+            <footer class="modernFooter">
+                <div class="footerContent">
+                    <div class="footerSection">
+                        <h3>Connect With Me</h3>
+                        <div class="socialLinks">
+                            <a href = "https://www.linkedin.com/in/dhruvi-shah-65baa7247/" class="socialLink">
+                                <img src = "images/linkedin.png" width = "30" height = "30" alt="LinkedIn">
+                            </a>
+                            <a href = "mailto:" class="socialLink">
+                                <img src = "images/email2.png" width = "30" height = "30" alt="Email">
+                            </a>
+                            <a href = "connect with me.html" class="socialLink">Contact Form</a>
+                        </div>
+                    </div>
+                    <div class="footerSection">
+                        <p>&copy; 2024 Dhruvi Shah. All rights reserved.</p>
+                        <p>Built with passion and dedication</p>
+                    </div>
+                </div>
+            </footer>
             </div>
         </div>
  
         <script src = "javaS.js"></script>
     </body>
- 
-
 </html>
