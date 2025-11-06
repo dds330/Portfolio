@@ -1912,7 +1912,7 @@ body {
 }
 
 .experienceRole {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #0f172a;
     margin: 0 0 0.25rem 0;
@@ -2025,6 +2025,130 @@ body {
     flex: 1;
 }
 
+/* Nautel Header Card - Small Rectangle at Top */
+.nautelHeaderCard {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #a855f7;
+    margin: 0 auto 2rem auto;
+    max-width: fit-content;
+    width: fit-content;
+}
+
+.nautelHeaderCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #a855f7, #c084fc);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+}
+
+.nautelHeaderContent {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.nautelHeaderInfo {
+    flex: 1;
+}
+
+.nautelHeaderInfo .experienceRole {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.nautelHeaderInfo .experienceCompany {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.nautelHeaderInfo .experienceLocation {
+    color: #64748b;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nautelHeaderDescription {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.nautelHeaderDescription p {
+    color: #1e293b;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 0 0.75rem 0;
+    font-weight: 500;
+}
+
+.nautelHeaderDescription p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #a855f7;
+}
+
+/* Co-op Terms Grid - 2 Cards Side by Side, 1 Below */
+.coopTermsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.termCard {
+    margin: 0;
+}
+
+/* Term 1 (3rd child) - centered below Term 3 and Term 2, wider to fit 2 points per line */
+.termCard:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: calc((100% - 2rem) * 0.7);
+    width: calc((100% - 2rem) * 0.7);
+    min-width: 650px;
+}
+
+/* Center header block but left-align text inside Term 1 card */
+.termCard:nth-child(3) .experienceHeader {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.termCard:nth-child(3) .experienceIconContainer {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.termCard:nth-child(3) .experienceInfo {
+    text-align: left;
+}
+
+.termCard:nth-child(3) .experienceLocationDate {
+    justify-content: flex-start;
+}
+
+.termCard:nth-child(3) .highlightsGrid {
+    justify-items: start;
+}
+
+.termCard:nth-child(3) .highlightItem {
+    text-align: left;
+}
+
 @media (max-width: 768px) {
     .experienceTitle {
         font-size: 2.5rem;
@@ -2045,7 +2169,7 @@ body {
     }
     
     .experienceRole {
-        font-size: 1.75rem;
+        font-size: 1.2rem;
     }
     
     .experienceCompany {
@@ -2054,6 +2178,45 @@ body {
     
     .highlightsGrid {
         grid-template-columns: 1fr;
+    }
+    
+    .coopTermsGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .termCard:nth-child(3) {
+        max-width: 100%;
+        width: 100%;
+        min-width: unset;
+    }
+    
+    .termCard:nth-child(3) .experienceHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nautelHeaderCard {
+        padding: 1.5rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .nautelHeaderContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .nautelHeaderInfo .experienceRole {
+        font-size: 1.25rem;
+    }
+    
+    .nautelHeaderInfo .experienceCompany {
+        font-size: 1.1rem;
+    }
+    
+    .nautelHeaderDescription p {
+        font-size: 0.95rem;
     }
 }
 
