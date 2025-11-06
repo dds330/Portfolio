@@ -2078,10 +2078,38 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 2rem;
+    align-items: stretch;
 }
 
 .termCard {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.termCard .experienceHighlights {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Terms 2 and 3 - ensure headers have same height for aligned highlights */
+.termCard:nth-child(1) .experienceHeader,
+.termCard:nth-child(2) .experienceHeader {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    height: 180px;
+    box-sizing: border-box;
+}
+
+/* Terms 2 and 3 - single column highlights for alignment */
+.termCard:nth-child(1) .highlightsGrid,
+.termCard:nth-child(2) .highlightsGrid {
+    grid-template-columns: 1fr;
+    align-content: start;
 }
 
 /* Term 1 (3rd child) - centered below Term 3 and Term 2, wider to fit 2 points per line */
