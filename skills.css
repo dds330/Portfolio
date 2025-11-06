@@ -297,16 +297,15 @@
    EDUCATION SECTION
    =================================== */
 .educationSectionIndex {
-    min-height: 100vh;
-    padding: 0 2rem 4rem;
-    padding-top: 2rem;
+    padding: 0 2rem 2rem;
+    padding-top: 1.5rem;
     background: #ffffff;
     position: relative;
     z-index: 1;
 }
 
 .educationContainer {
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -315,13 +314,13 @@
     align-items: center;
     justify-content: center;
     margin-top: 0;
-    margin-bottom: 4rem;
-    padding-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
     min-height: 60px;
 }
 
 .educationTitle {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
     text-align: center;
     margin: 0;
@@ -332,10 +331,16 @@
     line-height: 1;
 }
 
+.educationCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
 .educationCard {
     background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-    border-radius: 2rem;
-    padding: 3rem;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
@@ -363,23 +368,29 @@
 .educationHeader {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.75rem;
     border-bottom: 2px solid rgba(251, 191, 36, 0.2);
 }
 
 .educationIcon {
-    font-size: 4rem;
-    width: 80px;
-    height: 80px;
+    font-size: 3rem;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #fbbf24, #f59e0b);
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     box-shadow: 0 8px 20px rgba(251, 191, 36, 0.3);
     animation: float 3s ease-in-out infinite;
+}
+
+.beyondClassroomCard .educationIcon {
+    background: transparent;
+    border: 3px solid #fbbf24;
+    box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.3);
 }
 
 @keyframes float {
@@ -396,18 +407,18 @@
 }
 
 .educationDegree {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #000000;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.4rem 0;
     font-family: 'Space Grotesk', 'Outfit', sans-serif;
 }
 
 .educationUniversity {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fbbf24;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.4rem 0;
     font-family: 'Space Grotesk', 'Outfit', sans-serif;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -427,7 +438,7 @@
 .educationDetails {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
     margin-bottom: 2rem;
 }
 
@@ -435,7 +446,7 @@
     display: flex;
     align-items: baseline;
     gap: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     background: linear-gradient(135deg, rgba(251, 191, 36, 0.05), rgba(251, 191, 36, 0.02));
     border-left: 4px solid #fbbf24;
     border-radius: 0.75rem;
@@ -462,17 +473,17 @@
 }
 
 .educationAwards {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .awardBadge {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1.25rem 1.5rem;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
     background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(251, 191, 36, 0.08));
     border: 2px solid #fbbf24;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     box-shadow: 0 4px 15px rgba(251, 191, 36, 0.2);
     transition: all 0.3s ease;
 }
@@ -495,10 +506,50 @@
     flex: 1;
 }
 
+.beyondClassroomItems {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.beyondClassroomItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.75rem 1.25rem;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.05), rgba(251, 191, 36, 0.02));
+    border-left: 4px solid #fbbf24;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.beyondClassroomItem:hover {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(251, 191, 36, 0.05));
+    transform: translateX(5px);
+}
+
+.beyondClassroomRole {
+    font-weight: 700;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.beyondClassroomOrg {
+    color: #1f2937;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
 /* Responsive Design for Education */
 @media (max-width: 768px) {
     .educationTitle {
         font-size: 2.5rem;
+    }
+    
+    .educationCardsContainer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .educationCard {
