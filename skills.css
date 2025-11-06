@@ -1147,3 +1147,189 @@
     }
 }
 
+/* ===================================
+   CONNECT SECTION
+   =================================== */
+.connectSection {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.05) 0%, rgba(168, 85, 247, 0.05) 50%, rgba(99, 102, 241, 0.05) 100%);
+    position: relative;
+    z-index: 1;
+    margin-top: 4rem;
+}
+
+.connectContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.connectTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    min-height: 60px;
+}
+
+.connectTitle {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #0f172a;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+
+.connectMessageCard {
+    z-index: 1;
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    padding: 2rem 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    max-width: 800px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.connectMessage {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #1e293b;
+    margin: 0;
+    font-weight: 500;
+}
+
+.connectLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.connectLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    backdrop-filter: blur(10px);
+    border-radius: 3rem;
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.connectLink::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.connectLink:hover::before {
+    left: 100%;
+}
+
+.connectLink:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.emailLink:hover {
+    border-color: #ec4899;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(236, 72, 153, 0.05));
+}
+
+.linkedinLink:hover {
+    border-color: #0a66c2;
+    background: linear-gradient(135deg, rgba(10, 102, 194, 0.1), rgba(10, 102, 194, 0.05));
+}
+
+.githubLink:hover {
+    border-color: #333;
+    background: linear-gradient(135deg, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.05));
+}
+
+.resumeLink:hover {
+    border-color: #a855f7;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(168, 85, 247, 0.05));
+}
+
+.connectIcon {
+    font-size: 1.5rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.connectIconLogo {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    fill: currentColor;
+}
+
+.connectLink:hover .connectIcon,
+.connectLink:hover .connectIconLogo {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.connectText {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Design for Connect Section */
+@media (max-width: 768px) {
+    .connectSection {
+        padding: 4rem 1.5rem;
+    }
+    
+    .connectTitle {
+        font-size: 2.5rem;
+    }
+    
+    .connectMessageCard {
+        padding: 1.75rem 2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .connectMessage {
+        font-size: 1.2rem;
+    }
+    
+    .connectLinks {
+        gap: 1.5rem;
+    }
+    
+    .connectLink {
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+    }
+    
+    .connectIconLogo {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
