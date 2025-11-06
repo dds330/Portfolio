@@ -366,7 +366,7 @@ body {
     max-width: 1400px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     gap: 4rem;
     align-items: center;
     margin-left: 4rem;
