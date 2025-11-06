@@ -1814,7 +1814,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     padding-top: 2rem;
     min-height: 60px;
 }
@@ -2025,76 +2025,51 @@ body {
     flex: 1;
 }
 
-/* Nautel Header Card - Small Rectangle at Top */
-.nautelHeaderCard {
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-    border-radius: 1.5rem;
-    padding: 2rem;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #a855f7;
-    margin: 0 auto 2rem auto;
-    max-width: fit-content;
-    width: fit-content;
+/* Nautel Header Section - Similar to Beyond Tech */
+.nautelHeaderSection {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid rgba(168, 85, 247, 0.2);
 }
 
-.nautelHeaderCard::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, #a855f7, #c084fc);
-    background-size: 200% 100%;
-    animation: gradientShift 3s ease infinite;
-}
-
-.nautelHeaderContent {
+.nautelHeaderTitleContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    text-align: center;
 }
 
-.nautelHeaderInfo {
-    flex: 1;
+.nautelHeaderTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    color: #0f172a;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.2;
 }
 
-.nautelHeaderInfo .experienceRole {
-    font-size: 1.5rem;
-    margin-bottom: 0.25rem;
-}
-
-.nautelHeaderInfo .experienceCompany {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.nautelHeaderInfo .experienceLocation {
-    color: #64748b;
+.nautelHeaderSubtitle {
+    font-size: 1.15rem;
     font-weight: 500;
-    font-size: 0.95rem;
-}
-
-.nautelHeaderDescription {
-    padding-top: 1rem;
-    border-top: 1px solid rgba(168, 85, 247, 0.2);
-}
-
-.nautelHeaderDescription p {
-    color: #1e293b;
-    font-size: 1rem;
+    text-align: center;
+    color: #475569;
     line-height: 1.7;
-    margin: 0 0 0.75rem 0;
-    font-weight: 500;
+    max-width: 800px;
+    margin: 0 0 1rem 0;
+    font-style: italic;
 }
 
-.nautelHeaderDescription p:last-child {
-    margin-bottom: 0;
+.nautelHeaderCallout {
+    font-size: 1.1rem;
     font-weight: 600;
+    text-align: center;
     color: #a855f7;
+    margin: 0;
+    letter-spacing: 0.05em;
 }
 
 /* Co-op Terms Grid - 2 Cards Side by Side, 1 Below */
@@ -2195,28 +2170,16 @@ body {
         align-items: center;
     }
     
-    .nautelHeaderCard {
-        padding: 1.5rem;
-        max-width: 100%;
-        width: 100%;
+    .nautelHeaderTitle {
+        font-size: 2rem;
     }
     
-    .nautelHeaderContent {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
+    .nautelHeaderSubtitle {
+        font-size: 1rem;
     }
     
-    .nautelHeaderInfo .experienceRole {
-        font-size: 1.25rem;
-    }
-    
-    .nautelHeaderInfo .experienceCompany {
-        font-size: 1.1rem;
-    }
-    
-    .nautelHeaderDescription p {
-        font-size: 0.95rem;
+    .nautelHeaderCallout {
+        font-size: 1rem;
     }
 }
 
